@@ -3,6 +3,7 @@
 }
 header{
     background-color: #96CEB4;
+    
 }
 nav{
     background-color: #FFEEAD;
@@ -28,8 +29,15 @@ footer{
 .item5{
     grid-area: footer;
 }
+.menu {
+        list-style: none;
+
+    }
 /*Dispositivo Pequeño*/
 @media screen and (max-width: 580px) {
+    header{
+        height: 20vw;
+    }
     .grid-container{
         display: grid;
         grid-template-areas:
@@ -38,12 +46,27 @@ footer{
         'main'
         'aside'
         'footer';
-        grid-template-rows: 2fr 1fr 5fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 5fr .5fr 1fr;
     }
+    ul {
+        display: grid;
+        padding: 5px;
+        grid-template-areas:
+        'li li  li  li';
+    }
+    ul .submenu{
+        display: none;
+        list-style: circle;
+    }
+    #submenu:hover+.submenu{
+        display: flex;
+    }
+    
     
 }
 /*Dispositivo mediano*/
 @media screen and (min-width: 580px) {
+    
     .grid-container{
         display: grid;
         grid-template-areas:
@@ -51,12 +74,21 @@ footer{
         'nav    nav     nav   '
         'main   main    aside '        
         'footer footer  footer';
-        grid-template-rows: 2fr 1fr 5fr 1fr ;
+        grid-template-rows: .5fr 1fr 5fr 1fr ;
         grid-template-columns: 5fr 5fr 2fr;
+    }
+    ul {
+        display: grid;
+        padding: 5px;
+        grid-template-areas:
+        'li li  li  li';
     }
 }
 /*Dispositivo grande*/
 @media screen and (min-width: 995px) {
+    header{
+        height: 10vw;
+    }
     .grid-container{
         display: grid;
         grid-template-areas:
@@ -67,6 +99,10 @@ footer{
         ;
         grid-template-rows: 2fr 5fr 5fr 1fr;
         grid-template-columns: 2fr 5fr 5fr 1fr;
+    }
+    ul {
+        display: inline;
+
     }
     
 }
