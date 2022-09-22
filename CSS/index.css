@@ -33,6 +33,22 @@ footer{
         list-style: none;
 
     }
+.menu{
+
+    display:block;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    
+}
+#boton{
+    display: none;
+}
+#boton:checked ~ul{
+    opacity: 1;
+    /*transition: opacity 1.5s ease-in-out;*/
+    display: block;
+}
+
 /*Dispositivo Pequeño*/
 @media screen and (max-width: 580px) {
     header{
@@ -46,7 +62,7 @@ footer{
         'main'
         'aside'
         'footer';
-        grid-template-rows: 1fr 1fr 5fr .5fr 1fr;
+        grid-template-rows: .5fr .25fr 5fr .5fr 1fr;
     }
     ul {
         display: grid;
@@ -54,12 +70,17 @@ footer{
         grid-template-areas:
         'li li  li  li';
     }
+    ul .menu{
+        display: inline;
+    }
     ul .submenu{
-        display: none;
-        list-style: circle;
+        visibility: hidden;
+        list-style: none;
     }
     #submenu:hover+.submenu{
-        display: flex;
+        visibility: visible;
+        background-color: whitesmoke;
+        
     }
     
     
