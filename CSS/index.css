@@ -1,12 +1,14 @@
 *{
     font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+    margin-right: 0px;
 }
 header{
-    background-color: #96CEB4;
+    background-color: #00A7E1;
     
 }
 nav{
-    background-color: #FFEEAD;
+    background-color: #96CEB4;
 }
 aside{
     background-color: #D9534F;
@@ -14,6 +16,7 @@ aside{
 footer{
     background-color: #FFAD60;
 }
+
 .item1{
     grid-area: header;
 }
@@ -29,10 +32,32 @@ footer{
 .item5{
     grid-area: footer;
 }
-.menu {
-        list-style: none;
 
-    }
+.menu{
+    list-style: none;
+    display:block;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    background-color: #96CEB4;
+    
+}
+#boton{
+    display: none;
+}
+
+/*.submenu{
+    list-style: none;
+    display: none;
+}*/
+a {
+    margin: 5px;
+    padding: 1px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    border-radius: 10% 10%;
+}
+
 /*Dispositivo Pequeño*/
 @media screen and (max-width: 580px) {
     header{
@@ -46,7 +71,7 @@ footer{
         'main'
         'aside'
         'footer';
-        grid-template-rows: 1fr 1fr 5fr .5fr 1fr;
+        grid-template-rows: .5fr .25fr 5fr .5fr 1fr;
     }
     ul {
         display: grid;
@@ -54,12 +79,27 @@ footer{
         grid-template-areas:
         'li li  li  li';
     }
+    ul .menu{
+        display: inline;
+    }
     ul .submenu{
-        display: none;
-        list-style: circle;
+        visibility: hidden;
+        list-style: none;
     }
     #submenu:hover+.submenu{
-        display: flex;
+        visibility: visible;
+        background-color: whitesmoke;
+        
+    }
+    .menu{
+        opacity: 0;
+       
+        
+    }
+    #boton:checked ~ul{
+        opacity: 1;
+        /*transition: opacity 1.5s ease-in-out;*/
+        display: block;
     }
     
     
@@ -83,26 +123,115 @@ footer{
         grid-template-areas:
         'li li  li  li';
     }
+    #boton:checked ~ul{
+        opacity: 1;
+        /*transition: opacity 1.5s ease-in-out;*/
+        display: block;
+    }
 }
 /*Dispositivo grande*/
 @media screen and (min-width: 995px) {
     header{
-        height: 10vw;
+        width: 100vw;
+        font-size: x-large;
+        text-align: center;
+        color: #ffffff;
+        position: fixed;
+        z-index: 10;
+    }
+    nav{
+        width: 100vw;
+        position: fixed;
+        top: 88px;
+        z-index: 10;
+        }
+    
+    main {
+        position:relative;
+        top: 110px;
+    }
+    aside{
+        position:relative;
+        top: 85px;
+        right: 0px;
+    }
+    footer {
+        position: relative;
+        top: 110px;
     }
     .grid-container{
         display: grid;
         grid-template-areas:
         'header header  header   header'
-        'nav    main    main      aside '
-        'nav    main    main      aside '
+        'nav    nav     nav      nav    '
+        'main   main    main      aside '
         'footer footer  footer    footer'        
         ;
-        grid-template-rows: 2fr 5fr 5fr 1fr;
+        grid-template-rows: .75fr .25fr 15fr 1fr;
         grid-template-columns: 2fr 5fr 5fr 1fr;
     }
-    ul {
-        display: inline;
-
+    .items{
+        display: inline-flex;
+        position: sticky;
     }
     
+    
+    .submenu{
+        display: none;
+        outline: none;
+        overflow: hidden;
+        background-color: #96CEB4;
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        box-shadow: 0px 5px 10px 0px #00000073;
+
+
+    }
+   
+
+    .menu a:hover {
+        background-color: #00A7E1;
+        transition: .3s;
+        color: #ffffff;
+
+    }
+    .items2:hover .submenu{
+        transition: 1s;        
+        display: inline-flex;
+
+        
+    }
+    .btn-menu{
+        display: none;
+    }
+    .portada{
+        display: flex;
+        width: 90vw;
+        position: relative;
+        top: -25px;
+    }
+    .lema{
+        animation-name: anim-lema;
+        animation-duration: 10s;
+        animation-delay: 3s;
+        animation-iteration-count: 1;
+        position: relative;    
+        top: -180px;
+        color: #ffffff;
+        border: #00A7E1; 
+        text-shadow: 2px 2px #00000094;
+        text-align: center;
+        text-transform: uppercase;   
+        font-weight: bolder;
+        font-size: 30px;
+        
+    }/*
+    @keyframes anim-lema {
+
+        from{font-size: 0px;}
+        to {font-size: 30px;}
+        
+    }*/
 }
