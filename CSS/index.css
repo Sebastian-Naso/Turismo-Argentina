@@ -76,7 +76,7 @@ footer a{
         'main'
         'aside'
         'footer';
-        grid-template-rows: .5fr .25fr 5fr .5fr 1fr;
+        grid-template-rows: .5fr .25fr 30fr .5fr 1.5fr;
     }
     .boton{
     height: fit-content;
@@ -86,15 +86,7 @@ footer a{
     color: white;
     border-radius: 10px;
     }
-    ul {
-        display: grid;
-        padding: 5px;
-        grid-template-areas:
-        'li li  li  li';
-    }
-    ul .menu{
-        display: inline;
-    }
+    
     ul .submenu{
         visibility: hidden;
         list-style: none;
@@ -148,7 +140,7 @@ footer a{
     footer {
         position: absolute;
         width: 94vw;
-        top: 170vh;
+        top: 270vh;
     }
     .item2{
         display: inline-block;
@@ -197,7 +189,7 @@ footer a{
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        top: -80px;
+        top: -90px;
         z-index: -1;
         
     }
@@ -207,7 +199,7 @@ footer a{
         animation-delay: 0s;
         animation-iteration-count: 1;
         position: relative;    
-        top: 5px;
+        top: 10px;
         color: #ffffff;
         border: 2px #00A7E1; 
         text-shadow: 2px 2px #00000094;
@@ -217,7 +209,20 @@ footer a{
         font-size: 5vh;
         
     }
-   
+    .lema2{
+
+        position: relative;    
+        top: 10px;
+        color: #ffffff;
+        border: 2px #00A7E1; 
+        text-shadow: 2px 2px #00000094;
+        text-align: center;
+        text-transform: uppercase;   
+        font-weight: bolder;
+        font-size: 5vh;
+        background-color: #00A7E1;
+        
+    }
 
 
 
@@ -228,7 +233,7 @@ footer a{
 #btn1{
     font-size: 3vw;
     
-    width: 25vw;
+    width: 30vw;
     background-color: #00A7E1;
     color: white;
     border-radius: 10px;
@@ -239,13 +244,14 @@ footer a{
     
 }
 .img1 img{
-    width: 25vw;
+    width: 85vw;
     height: 45vh;
     object-fit: cover;
     border-radius: 15px;
     margin: 10px;
     opacity: 0.5;
 }
+
 .img1 {
     display: inline-block;
     position: relative;
@@ -259,7 +265,7 @@ img:hover{
     
     position: absolute;
     bottom: 5%;
-    left: 25%;
+    left: 40%;
     transform: translate(-50%, -50%);
     /*background-color: aqua;*/
     width: 10vw;
@@ -271,8 +277,8 @@ img:hover{
     margin: auto;
     margin-top: 15vh;
     width: 100%;
-    height: 50vh;
-    border: 3px solid black;
+    height: 150vh;
+
     text-align: center;
 
   
@@ -550,5 +556,19 @@ img:hover{
     text-align: center;
 
   
+}
+.lema2{
+
+    position: relative;    
+    top: 10px;
+    color: #ffffff;
+    border: 2px #00A7E1; 
+    text-shadow: 2px 2px #00000094;
+    text-align: center;
+    text-transform: uppercase;   
+    font-weight: bolder;
+    font-size: 5vh;
+    background-color: #00A7E1;
+    
 }
 }
