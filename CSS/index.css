@@ -378,7 +378,7 @@ img:hover{
     nav{
         width: 100vw;
         position: fixed;
-        top: 88px;
+        top: 100px;
         z-index: 10;
         }
     
