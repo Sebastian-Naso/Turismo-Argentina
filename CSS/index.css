@@ -417,7 +417,10 @@ img:hover{
         text-align: center;
         text-transform: uppercase;   
         font-weight: bolder;
-        font-size: 30px;
+        font-size: 10vh;
+        z-index: 3;
+        margin-left: auto;
+        margin-right: 10px;
         
     }
     /*.lema2{
@@ -526,15 +529,18 @@ img:hover{
     object-fit: cover;
     border-radius: 15px;
     margin: 10px;
-    opacity: 0.5;
+    opacity: 0.5; 
+    box-shadow: 2px 2px 4px #00000097;
 }
 .img1 {
     display: inline-block;
     position: relative;
+   
 }
 .img1 img:hover{
     opacity: 1;
     transition: .5s;
+    
 }
 
 .texto-abajo{
@@ -568,8 +574,11 @@ img:hover{
     text-align: center;
     text-transform: uppercase;   
     font-weight: bolder;
-    font-size: 5vh;
+    font-size: 8vh;
     background-color: #00A7E1;
+    height: 12vh;
+    line-height: 12vh;
+
     
 }
 
@@ -587,6 +596,8 @@ img:hover{
     min-width: 96vw;
     position: relative;
     object-fit: cover;
+    box-shadow: 2px 2px 4px #00000097;
+    border-radius: 15px;
  
 }
 
