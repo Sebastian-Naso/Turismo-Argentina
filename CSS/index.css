@@ -66,10 +66,7 @@ footer a{
 }
 
 /*Dispositivo Pequeño*/
-@media screen and (max-width: 580px) {
-    *{
-        zoom: 97%;
-    }
+@media screen and (max-width: 480px) {
     header{
         height: 20vw;
     }
@@ -122,7 +119,6 @@ footer a{
     header h1{
         text-align: left;
         margin-left: 5px;
-        color: red;
         z-index: 11;
     }
     nav{
@@ -337,7 +333,7 @@ img:hover{
     
 }
 /*Dispositivo mediano*/
-@media screen and (min-width: 581px) {
+@media screen and (min-width: 481px) {
     
     .grid-container{
         display: grid;
@@ -362,7 +358,7 @@ img:hover{
     }
 }
 /*Dispositivo grande*/
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 720px) {
     header{
         width: 100vw;
         font-size: x-large;
