@@ -54,25 +54,38 @@
     <aside id="cuerpo" class="item3">
         <p>Aside</p>
     </aside>-->
+    
     <main id="cuerpo" class="item4">
         <div class="portada">
         <p class="lema">Recorre Argentina con nuestra ayuda</p>
-        <img class="portada2" src="img/portada.jpg" alt="portada">
-        
-        
+        <!--<img class="portada2" src="img/portada.jpg" alt="portada">-->
+        <!--Contenedor del slideshow-->
+    
+    <div class="slideshow-contenedor">
+        <div class="miSlides fade">
+            <img class="slide" src="IMG\Slideshow\portada.jpg" alt="">
+        </div>
+        <div class="miSlides fade">
+            <img class="slide" src="IMG\Slideshow\mayor-colonia-pinguinos-magallanes-costa-oceano-atlantico-epoca-reproduccion-verano-patagonia-argentina_137841-20.jpg" alt="">
+        </div>
+        <div class="miSlides fade">
+            <img class="slide" src="IMG\Slideshow\XE3CZCLCOREFBF2LSJZSDFVGQY.jpg" alt="">
+        </div>
+    </div>
+   
     </div>
     <p class="lema2">destinos</p>
     <div class="line">
         <div class="img1">
-            <img src="IMG\CABA\teatro_colon_drone_1500x610.jpg" alt="">
+            <img id="img1"src="IMG\CABA\teatro_colon_drone_1500x610.jpg" alt="">
             <div class="texto-abajo"><button id="btn1" class="boton"><a href="">CABA</a></button></div>
         </div>
         <div class="img1">
-            <img src="IMG\Jujuy\purmamarca-cerro-paisaje-xjpg.jpg" alt="">
+            <img id="img1" src="IMG\Jujuy\purmamarca-cerro-paisaje-xjpg.jpg" alt="">
             <div class="texto-abajo"><button id="btn1" class="boton"><a href="">Salta</a></button></div>
         </div>
         <div class="img1">
-            <img src="IMG\Neuquen\cerro-tronador.jpg" alt="">
+            <img id="img1" src="IMG\Neuquen\cerro-tronador.jpg" alt="">
             <div class="texto-abajo"><button id="btn1" class="boton"><a href="">Neuquen</a></button></div>
         </div>
     </div>
@@ -98,6 +111,23 @@
         <a href="https://www.whatsapp.com"><i id="ico" class="fa-brands fa-whatsapp"></i></a>
         <p class="Derechos">Derechos reservados</p>
     </footer>
-    
+ <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("miSlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+</script>   
 </body>
+
+
 </html>
