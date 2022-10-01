@@ -66,7 +66,7 @@ footer a{
 }
 
 /*Dispositivo Pequeño*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
     header{
         height: 20vw;
     }
@@ -110,7 +110,7 @@ footer a{
     }
     header{
         width: 100vw;
-        font-size: 5vw;
+        font-size: 4.5vh;
         height: 22vh;
         color: #ffffff;
         position: fixed;
@@ -127,7 +127,7 @@ footer a{
         position: fixed;
         top: 22vh;
         z-index: 10;
-        font-size: 4vh;
+        font-size: 3vh;
         
         }
     
@@ -186,6 +186,8 @@ footer a{
         display:block;
         color:#ffffff;
         margin-left:5px;
+        margin-top: 3px;
+        font-size: 4vh;
     }
     .portada2{
         display: block;
@@ -306,7 +308,7 @@ img:hover{
     object-fit: cover;
     box-shadow: 2px 2px 4px #00000097;
     border-radius: 15px;
-    top: 8vh;
+    top: -50px;
 
 }
 
@@ -333,7 +335,7 @@ img:hover{
     
 }
 /*Dispositivo mediano*/
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 581px) {
     
     .grid-container{
         display: grid;
@@ -358,10 +360,10 @@ img:hover{
     }
 }
 /*Dispositivo grande*/
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1100px) {
     header{
         width: 100vw;
-        font-size: x-large;
+        font-size: 5vh;
         
         color: #ffffff;
         position: fixed;
@@ -408,7 +410,9 @@ img:hover{
         position: sticky;
     }
     
-    
+    .menu{
+        font-size: 3vh;
+    }
     .submenu{
         display: none;
         outline: none;
@@ -455,14 +459,14 @@ img:hover{
         animation-delay: 0s;
         animation-iteration-count: 1;
         position: relative;    
-        top: 5px;
+        top: 5vh;
         color: #ffffff;
         border: 2px #00A7E1; 
         text-shadow: 2px 2px #00000094;
         text-align: center;
         text-transform: uppercase;   
         font-weight: bolder;
-        font-size: 10vh;
+        font-size: 8vh;
         z-index: 3;
         margin-left: auto;
         margin-right: 10px;
