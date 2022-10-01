@@ -64,7 +64,7 @@ footer a{
 }
 
 /*Dispositivo Pequeño*/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
     header{
         height: 20vw;
     }
@@ -287,7 +287,7 @@ img:hover{
     
 }
 /*Dispositivo mediano*/
-@media screen and (min-width: 580px) {
+@media screen and (min-width: 481px) {
     
     .grid-container{
         display: grid;
@@ -312,7 +312,7 @@ img:hover{
     }
 }
 /*Dispositivo grande*/
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 720px) {
     header{
         width: 100vw;
         font-size: x-large;
