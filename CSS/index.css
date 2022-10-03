@@ -3,7 +3,9 @@
     margin-top: 0px;
     margin-right: 0px;
     box-sizing: border-box;
-    zoom: 99%;
+}
+body {
+    margin: 0;
 }
 header{
     background-color: #00A7E1;
