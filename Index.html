@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="JS/index.js"></script>
+    <link rel="stylesheet" href="CSS\tiempo.css">
     <!--meta http-equiv="refresh" content="1"-->
     <title>Turismo por Argentina</title>
 </head>
@@ -55,6 +56,14 @@
     </aside>
     
     <main id="cuerpo" class="item4">
+        <div class="container">
+            <div class="tiempo">
+              <h1 class="name" id="name"></h1>
+              <img id="icon" src="">
+              <p class="temp"></p>
+              <p class="desc" style="text-transform:uppercase;"></p>
+            </div>
+          </div>
         <div class="portada">
         <p class="lema">Recorre Argentina con nuestra ayuda</p>
     
@@ -94,22 +103,23 @@
         <a href="https://www.whatsapp.com"><i id="ico" class="fa-brands fa-whatsapp"></i></a>
         <p class="Derechos">Derechos reservados</p>
     </footer>
- <script>
-    let slideIndex = 0;
-    showSlides();
+    <script src="JS\tiempo.js"></script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-    function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("miSlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex-1].style.display = "block";  
-    setTimeout(showSlides, 3500); // Change image every 2 seconds
-    }
-</script>   
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("miSlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+        }
+    </script>   
 </body>
 
 

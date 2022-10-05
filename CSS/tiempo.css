@@ -1,0 +1,53 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  text-align: right;
+}
+
+.tiempo{
+  position: relative;
+  top: -15vh;
+  right: 15px;
+  overflow: hidden;
+  grid-template-columns: 30vw 10vw;
+  grid-template-rows: 5vw  3vw;
+  width: 75%;
+  background: #e7e7e772;
+  height: 15vh;
+  margin: 50px auto;
+  border-radius: 2px;
+  text-align: center;
+  border: 2px solid #00A7E1;
+  font-size: 3vw;
+}
+#icon{
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 30px;
+  top: -5px;
+  
+}
+.name{
+  text-align: right;
+  position: absolute;
+  right: 9px;
+  top:3px
+
+}
+.desc{
+  position: absolute;
+    left: 9px;
+    top: 60px;
+    text-align: center;
+
+}
+.temp{
+  text-align: right;
+    position: absolute;
+    right: 9px;
+    top: 55px;
+
+}
+
