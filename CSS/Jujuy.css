@@ -1,0 +1,176 @@
+/* Estilos generales */
+
+* {
+    font-family: 'roboto' ,sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header{
+    background-color: #00A7E1;
+    
+}
+
+/* Menu navegacion */
+nav {
+    background:#0037e1;
+    height: 100px;
+    width: 100%;
+    
+}
+.enlance {
+    position:absolute;
+    padding: 20px 50px;
+}
+.logo {
+    height: 40px;
+}
+nav ul {
+    float:left;
+    margin-right: 20px;
+}
+nav ul li {
+    display:inline-block;
+    line-height:82px ;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:aliceblue;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: gray;
+    transition: .5s;
+  
+}
+.checkbtn{
+    font-size: 30px;
+    color:ffff;
+    float:left;
+    line-height: 80px;
+    margin-left: 20px;
+    cursor:pointer;
+    display:none;
+}
+
+.submenu {
+    font-size: 30px;
+    color:ffff;
+    float:left;
+    line-height: 80px;
+    margin-left: 20px;
+    cursor:pointer;
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+/* Menu navegacion tablets  */
+/* tablets */
+@media (max-width: 952px){
+    .enlance{
+        padding-right: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+/* celulares */
+@media (max-width: 580px){
+
+    /* Header dispositivos chicos */
+    header{
+        height: 100%;
+    }
+
+    header{
+        width: 100vw;
+        font-size: 2.5vh;
+        height: 10vh;
+        color: #ffffff;
+        position: block;
+        z-index: 0;
+    }
+    header h1{
+        text-align: left;
+        margin-left: 5px;
+        z-index: 11;
+    }
+
+
+    /* Menu dispositvos chicos */
+
+    nav{
+        width: 100vw;
+        height: 20vh;
+        position: bottom;
+        top: 100%;
+        z-index: 10;
+        font-size: 3.5vw;
+        
+        }
+
+    .checkbtn{
+        display: block;
+    }
+    .submenu{
+        display: block;
+    }
+    ul {
+        position:fixed;
+        width:60%;
+        height:100vh;
+        background: #0037e1;
+        opacity:50;
+        top: 140px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font: size 20px;
+    } 
+    li a:hover, li a.active{
+        background:none;
+        color:blue;
+    }
+    #check:checked ~ul{
+        left:0;
+    }
+    .submenu:checked ~ a{
+        left:0;
+    }
+/* Footer */
+
+     footer {
+       position: relative;
+       width: 99vw;
+       top: 100vh;
+    }
+
+}
+
+
+/* Footer */
+footer{
+    background-color: #00e1ab;
+    text-align: center;
+}
+
