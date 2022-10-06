@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    
     margin-top: 0px;
     margin-right: -1px;
     margin-left: 1px;
@@ -303,14 +303,7 @@ img:hover{
     nav{
         font-size: 3.5vh;
     }
-    .menu{
-        opacity: 0;
-    }
-    #boton:checked ~.menu{
-        opacity: 1;
-        /*transition: opacity 1.5s ease-in-out;*/
-        display: block;
-    }
+    
     aside{
         display: none;
     }
@@ -320,11 +313,19 @@ img:hover{
         top: 35vh;
         
     }
+    .menu{
+        opacity: 0;
+    }
+    #boton:checked ~.menu{
+        opacity: 1;
+        /*transition: opacity 1.5s ease-in-out;*/
+        display: block;
+    }
     .submenu{
-        top: 40px;
+        top: 6.9vw;
     }
     .portada2{
-        top: -90px;  
+        top: -15.5vw;  
     }
     .lema{
         top: 5vh;
