@@ -45,7 +45,7 @@ aside{
 }
 footer{
     background-color: #00e1ab;
-    text-align: center;
+
 }
 body {
     margin: 0;
@@ -435,6 +435,7 @@ img:hover{
         position: relative;
         top: 200px;
         width: 100vw;
+        height: 19vw;
     }
     .submenu{
         top: 45px;
@@ -496,5 +497,28 @@ img:hover{
         min-height: 120vh;
 
         margin-left: auto;
+    }
+    .socialnetwork {
+        text-align: left;
+        display: list-item;
+        list-style-position: inside;
+        list-style: none;
+        max-width: 10vw;
+        z-index: 15;
+    }
+    .mapa {
+        position:relative;
+        top: -10vw;
+        text-align: center;
+        left: 65vw;
+        z-index: 1;
+        width: 30%;
+    }
+    footer iframe{
+        height: 18vw;
+        width: 27vw;
+        border-radius: 1vw;
+        border: 2px solid #000000
+        /*box-shadow: 2px 2px 4px #00000097;*/
     }
 }
