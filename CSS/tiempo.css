@@ -3,50 +3,38 @@
 }
 .container{
   text-align: right;
+
 }
 
 .tiempo{
-  position: relative;
-  
-  overflow: hidden;
-  
-  background: #e7e7e772;
-  
-  text-align: center;
-  
+  position: relative;  
+  overflow: hidden;  
+  background: #e7e7e772;  
+  text-align: center;  
 }
-#icon{
-  
-  position: absolute;
- 
-  
+#icon{  
+  position: absolute;  
 }
 .name{
   text-align: right;
-  position: absolute;
-  
+  position: absolute;  
 }
 .desc{
   position: absolute;
-   
-    text-align: center;
-
+  text-align: center;
 }
 .temp{
   text-align: right;
-    position: absolute;
-
+  position: absolute;
 }
 /*Dispositivo Pequeño*/
 @media screen and (max-width: 580px){
   .tiempo{
-    top: -15vh;
-    right: 2.6vw;
+    margin:-15vw auto auto;
     grid-template-columns: 30vw 10vw;
     grid-template-rows: 5vw  3vw;
-    width: 90%;
+    width: 90vw;
     height: 20vw;
-    margin: 8.6vw auto;
     border-radius: 3vw;
     border: .35vw solid #00A7E1;
   }
@@ -75,17 +63,17 @@
 }
 
 /*Dispositivo mediano*/
-@media (min-width: 581px) and (max-width: 1024px) {
+@media (min-width: 581px) and (max-width: 960px) {
   .tiempo{
-    top: 5vh;
-    right: 1.5vw;
+    top: 2vw;
+    right: .8vw;
     grid-template-columns: 30vw 10vw;
     grid-template-rows: 5vw  3vw;
-    width: 75%;
-    height: 12vw;
-    margin: 4.9vw auto;
-    border-radius: 2vw;
-    border: .2vw solid #00A7E1;
+    width: 80%;
+    height: 15vw;
+    margin: 2.6vw  auto;
+    border-radius: 3vw;
+    border: .1vw solid #00A7E1;
     font-size: 1vw;
   }
   #icon{
@@ -95,13 +83,13 @@
     top: 0
   }
   .name{
-    font-size: 5vw;
+    font-size: 4vw;
     right: .9vw;
     top:0
     
   }
   .desc{
-      left: .9vw;
+      left: 2.9vw;
       top: 7vw;  
       font-size: 2.5vw;
   }
@@ -110,19 +98,20 @@
       top: 7vw;
       font-size: 2.5vw;  
   }
+  
 }
 
 /*Dispositivo grande*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 961px) {
   .tiempo{
-    top: -15vh;
+    top: 1vw;
     right: .8vw;
     grid-template-columns: 30vw 10vw;
     grid-template-rows: 5vw  3vw;
     width: 30%;
-    height: 8vw;
+    height: 10vw;
     margin: 2.6vw  auto;
-    border-radius: 1vw;
+    border-radius: 2vw;
     border: .1vw solid #00A7E1;
     font-size: 1vw;
   }
@@ -139,12 +128,12 @@
   }
   .desc{  
       font-size: 1.5vw;
-      left: .5vw;
-      top: 5vw;  
+      left: 2.4vw;
+      top: 7vw;  
   }
   .temp{  
       font-size: 1.5vw;
       right: .5vw;
-      top: 5vw;  
+      top: 7vw;  
   }
 }
