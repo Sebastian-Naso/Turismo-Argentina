@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+#caba{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000094;
+    text-align: left;
+    text-transform: uppercase;   
+    font-weight: bolder;
+    background-color: #00A7E1;
+    width: auto;
+    height: auto;
+}
+.caba{
+    font-size: 3vw;
+    margin-left: 1vw;
+}
+.imagenes img{
+    width: 74%;
+    left: 13%;
+    right: 13%;
+    height: 25vw;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 4px #00000097;
+    object-fit: cover;
+}
+.imagenes2 img{
+    width: 74%;
+    left: 13%;
+    right: 13%;
+    height: 25vw;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 4px #00000097;
+    object-fit: cover;
+}
+.imagenes2{
+    display: flex;
+    margin: 1vw;
+    padding: 10px;
+    width: 100vw;
+}

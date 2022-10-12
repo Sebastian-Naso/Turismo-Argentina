@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="JS/index.js"></script>
+    <link rel="stylesheet" href="../CSS\tiempo.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header id="header-id"></header>
+    <script src="../JS\header.js"></script>
+    <nav id="nav-id"></nav>
+    <script src="../JS\nav.js"></script>
+    <main id="cuerpo" class="item4">
+        <div id="weather-id" class="container" style="z-index:99;">
+        <script src="../js/weather.js"></script>
+        <script src="../JS/tiempo.js"></script>
+        </div>
+        <div id="contacto">
+            <h1 class="contacto">Contacto</h1>
+        </div>
+        <br>
+        <p>Escribenos dudas, consultas, sugerencias... lo que se te ocurra.</p>
+        <p>En breve nos pondremos en contacto con vos!</p>
+        <form action="">
+            <div class="elementos"><br>
+            <label for="firstName">Nombre</label><br>
+            <input type="text" name="firstName" id="firstName" placeholder="Tu nombre..."><br>
+            <label for="lastName">Apellido</label><br>
+            <input type="text" name="lastName" id="lastName" placeholder="Tu apellido..."><br>
+            <label for="mail">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Tu Email..."><br>
+            <label for="telephone">Teléfono</label><br>
+            <input type="tel" name="telephone" id="telephone" maxlength="13" placeholder="Tu teléfono..."><br>
+            <label for="asunto">Asunto</label><br>
+            <input type="text" name="asunto" id="asunto" maxlength="120" placeholder="Asunto..."><br>
+            <label for="mensaje">Mensaje</label><br>
+            <textarea maxlength="500" id="mensaje" name="mensaje" placeholder="Escribe algo..."  ></textarea><br><br>
+            <input id="enviar" type="submit" value="Enviar"><br><br>
+            <input id="borrar" type="reset" value="Borrar"><br><br><br>
+            </div>
+
+        </form>
+    </main>
+    
+    <footer id="footer-id"></footer>
+    <script src="../JS\footer.js"></script>
+</body>
+</html>
