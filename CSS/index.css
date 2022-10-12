@@ -6,7 +6,9 @@
     max-width: 100vw;
     font-family: 'Roboto', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 header{
     background-color: #00A7E1;
@@ -482,7 +484,16 @@ footer iframe{
         opacity: 1;
         transition: .5s;
     }
-    
+    #footer-destino{
+        position: absolute  ;
+        top: -2vw;
+        left: 15vw;
+        margin-top: 2vw;
+        padding: 1vw;
+        font-size: 1.5vw;
+        text-align: left;
+        max-width: 20vw;
+    }
 
 }
 /*Dispositivo mediano*/
@@ -653,6 +664,16 @@ footer iframe{
         opacity: 1;
         transition: .5s;
     }
+    #footer-destino{
+        position: absolute  ;
+        top: -2vw;
+        left: 15vw;
+        margin-top: 2vw;
+        padding: 1vw;
+        font-size: 1.5vw;
+        text-align: left;
+        max-width: 20vw;
+    }
 
 
 }
@@ -708,7 +729,7 @@ footer iframe{
     
     footer {
         position: relative;
-        height: auto;
+        height: 20vw;
         width: 100%;
         top: 45vw;
         
@@ -807,27 +828,25 @@ footer iframe{
     .mapa {
         width: 30%;
         position:relative;
-        top: -14vw;
+        top: 1vw;
         text-align: center;
         left: 65vw;
         z-index: 1;
-        width: 30%;
     }
     footer iframe{
-        height: 18vw;
+        height: 17vw;
         width: 27vw;
         border-radius: 1vw;
         border: 2px solid #000000
         /*box-shadow: 2px 2px 4px #00000097;*/
     }
     .socialnetwork {
+        position: absolute;
+        top: -1vw;
         margin-top: 2vw;
         padding: 1vw;
         font-size: 1.5vw;
         text-align: left;
-        display: list-item;
-        list-style-position: inside;
-        list-style: none;
         max-width: 20vw;
         z-index: 15;
     }
@@ -843,7 +862,15 @@ footer iframe{
     .btn-menu{
         display: none;
     }
+    #footer-destino{
+        position: absolute  ;
+        top: -1vw;
+        left: 15vw;
+        margin-top: 2vw;
+        padding: 1vw;
+        font-size: 1.5vw;
+        text-align: left;
+        max-width: 20vw;
+    }
     
-    
-   
 }

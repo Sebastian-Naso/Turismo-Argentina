@@ -11,7 +11,7 @@ document.getElementById("nav-id").innerHTML=`
                 <a href="../SUB/Nosotros.html">Nosotros</a>
             </div>
             <div class="items2 items">
-                <a href="">Destinos <i class="fa fa-caret-down"></i></a>
+                <a href="#footer-destino">Destinos <i class="fa fa-caret-down"></i></a>
                     <div class="submenu">
                             <a href="../SUB/CABA.html">CABA</a>  
                             <a href="../SUB/Neuquen.html">Neuquén</a> 
