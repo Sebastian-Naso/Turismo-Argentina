@@ -1,0 +1,129 @@
+*{    
+    margin-top: 0px;
+    margin-right: -1px;
+    margin-left: 1px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    background-color: #00A7E1;
+    width: 100vw;
+    font-size: 4.5vh;
+    height: 20vh;
+    color: #ffffff;
+    position: fixed;
+    z-index: 10;
+    border: 3px dotted red;
+}
+header h1{
+    text-align: left;
+    margin-left: 5px;
+    z-index: 11;
+}
+
+
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: nav;
+}
+.item3{
+    grid-area: aside;
+}
+.item4{
+    grid-area: main;
+}
+.item5{
+    grid-area: footer;
+}
+
+
+.item2{
+    display: inline-block;
+}
+.items{
+    display: inline-flex;
+    position: sticky;
+}
+
+
+/*Dispositivo Pequeño*/
+@media screen and (max-width: 580px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer';
+        grid-template-rows: auto auto auto .5vw 45vw;
+    }
+    header{
+        margin-top: 15vw;
+        width: 100vw;
+        font-size: 4.5vw;
+        height: 20vw;
+    }
+    .titulo{      
+        left: 20vw;
+        position: absolute;
+    }
+    
+}
+/*Dispositivo mediano*/
+@media (min-width: 581px) and (max-width: 960px) {
+    
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header header  header'
+        'nav    nav     nav   '
+        'main   main    aside '        
+        'footer footer  footer';
+        grid-template-rows: auto auto auto auto ;
+        grid-template-columns: 40vw 40vw 20vw;
+    }
+    header{
+        width: 100vw;
+        font-size: 4.5vw;
+        height: 21vw;
+        top: -1vw;
+
+    }
+    header h1{
+        margin-left: 1vw;
+    }
+    
+}
+/*Dispositivo grande*/
+@media screen and (min-width: 961px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header header  header   header'
+        'nav    nav     nav      nav    '
+        'main   main    main      main '
+        'footer footer  footer    footer'        
+        ;
+        grid-template-rows: .75fr .25fr auto .75fr;
+        grid-template-columns: 2fr 5fr 5fr 10fr;
+    }
+    
+   
+    
+    header{
+        width: 100vw;
+        font-size: 2vw;
+        height: 10vw;
+       
+
+    }
+    header h1{
+        margin-left: 1vw;
+    }
+}

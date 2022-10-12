@@ -20,8 +20,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=-34.6036&lon=-58.3815
   main.innerHTML = "Buenos Aires";
   desc.innerHTML = descValue;
   temp.innerHTML = "Temp: "+tempValue+"°C";
-  //document.getElementById('icon').src = "http://openweathermap.org/img/wn/"+ data.weather[0].icon +"@2x.png";
-  document.getElementById('icon').src = "IMG/icons/"+ data.weather[0].icon +".png";
+  document.getElementById('icon').src = "http://openweathermap.org/img/wn/"+ data.weather[0].icon +"@2x.png";
+  //document.getElementById('icon').src = "IMG/icons/"+ data.weather[0].icon +".png";
   //document.getElementById('icon').src = "icons/11d.png";
   //document.getElementById('icon').src = "http://openweathermap.org/img/wn/11d@2x.png";
 })
