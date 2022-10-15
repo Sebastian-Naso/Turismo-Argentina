@@ -12,9 +12,6 @@ html {
 
 header{
     background-color: #00A7E1;
-    width: 100vw;
-    font-size: 4.5vh;
-    height: 20vh;
     color: #ffffff;
     position: fixed;
     z-index: 10;
@@ -25,16 +22,9 @@ header h1{
     z-index: 11;
 }
 nav{
-    font-size: 3.5vw;
     background-color: #0037e1;
-    width: 100vw;
-    height: 6vh;
     position: fixed;
     z-index: 12;
-    top: 5vw  
-    
-    
-
 }
 main {
     position:relative;
@@ -58,6 +48,7 @@ body {
 }
 .item2{
     grid-area: nav;
+    display: inline-block;
 }
 .item3{
     grid-area: aside;
@@ -74,17 +65,12 @@ body {
     display:block;
     transition: opacity 1s ease-in-out;
     opacity: 1;
-    background-color: #0037e1;
-    
+    background: linear-gradient(#00A7E1, #0037e1);
 }
 #boton{
     display: none;
 }
 
-/*.submenu{
-    list-style: none;
-    display: none;
-}*/
 a {
     margin: 5px;
     padding: 1px;
@@ -97,15 +83,12 @@ footer a{
     color: #000000;
 }
 .boton{
-height: fit-content;
-padding: 10px;
-width: 100%;
-background-color: #00A7E1;
-color: white;
-border-radius: 10px;
-}
-.item2{
-    display: inline-block;
+    height: fit-content;
+    padding: 10px;
+    width: 100%;
+    background-color: #00A7E1;
+    color: white;
+    border-radius: 10px;
 }
 .items{
     display: inline-flex;
@@ -123,10 +106,7 @@ border-radius: 10px;
     top: 25px;
     left: 5px;
     box-shadow: 0px 5px 10px 0px #00000073;
-
-
 }
-
 
 .menu a:hover {
     background-color: #00A7E1;
@@ -137,8 +117,6 @@ border-radius: 10px;
 .items2:hover .submenu{
     transition: 1s;        
     display: list-item;
-
-    
 }
 .btn-menu{
     display:block;
@@ -153,8 +131,7 @@ border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: -1;
-    
+    z-index: -1; 
 }
 .lema{
     animation-name: anim-lema;
@@ -171,10 +148,8 @@ border-radius: 10px;
     font-weight: bolder;
     font-size: 6vw;
     z-index: 8;
-    
 }
 .lema2{
-
     position: relative;    
     top:25vh;
     color: #ffffff;
@@ -704,19 +679,15 @@ footer iframe{
     header{
         width: 100vw;
         font-size: 2vw;
-        height: 10vw;
-       
-
+        height: 5vw;
     }
     header h1{
         margin-left: 1vw;
     }
     nav{       
         width: 100vw;
-        height: 5vw;
         font-size: 1.5vw; 
-        top: 10vw;
-      
+        top: 5vw;
     }
     main {  
         position:relative;
