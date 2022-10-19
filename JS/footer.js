@@ -9,9 +9,9 @@ document.getElementById("footer-id").innerHTML =/*html*/ `
 </div>
 <div id="footer-destino">
     <p>Destinos:</p>
-    <a href="SUB\CABA.html">CABA</a><br>
-    <a href="SUB\Neuquen.html">Neuquén</a> <br>
-    <a href="SUB\Salta.html">Salta</a><br>
+    <a href="CABA.html">CABA</a><br>
+    <a href="Neuquen.html">Neuquén</a> <br>
+    <a href="Salta.html">Salta</a><br>
 </div>
 
 <div class="mapa">
