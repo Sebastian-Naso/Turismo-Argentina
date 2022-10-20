@@ -15,7 +15,7 @@ document.getElementById("nav-id").innerHTML=`
                     <div class="submenu">
                             <a href="../SUB/CABA.html">CABA</a>  
                             <a href="../SUB/Neuquen.html">Neuquén</a> 
-                            <a href="../SUB/Salta.html">Salta</a> 
+                            <a href="../SUB/Jujuy.html">Jujuy</a> 
                     </div>
             </div>
             <div class="items">

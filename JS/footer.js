@@ -11,7 +11,7 @@ document.getElementById("footer-id").innerHTML =/*html*/ `
     <p>Destinos:</p>
     <a href="CABA.html">CABA</a><br>
     <a href="Neuquen.html">Neuquén</a> <br>
-    <a href="Salta.html">Salta</a><br>
+    <a href="Jujuy.html">Jujuy</a><br>
 </div>
 
 <div class="mapa">
