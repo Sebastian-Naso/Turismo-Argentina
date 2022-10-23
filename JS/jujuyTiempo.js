@@ -23,7 +23,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?lat=-24.194559&lon=-65.29
   var iconCode = data.weather[0].icon; 
 
   console.log(iconCode);
-  main.innerHTML = nameValue;
+  main.innerHTML = "Jujuy";
   desc.innerHTML = descValue;
   temp.innerHTML = "Temp: "+tempValue+"°C";
   document.getElementById('icon').src = "http://openweathermap.org/img/wn/"+ data.weather[0].icon +"@2x.png";

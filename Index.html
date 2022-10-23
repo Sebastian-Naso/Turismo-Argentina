@@ -14,6 +14,8 @@
     <script src="JS/index.js"></script>
     <link rel="stylesheet" href="CSS\tiempo.css">
     <!--meta http-equiv="refresh" content="2"-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Turismo Argentina</title>
 </head>
 <body class="grid-container">
@@ -82,7 +84,7 @@
             <br><br><br><br>
         </div>
     <p  class="lema2">Destinos</p>
-    <div class="line">
+    <div class="line"  data-aos="zoom-in">
         <div class="img1">
             <img id="img1"src="IMG\CABA\teatro_colon_drone_1500x610.jpg" alt="">
             <div class="texto-abajo"><button id="btn1" class="boton"><a href="SUB/CABA.html">CABA</a></button></div>
@@ -96,6 +98,9 @@
             <div class="texto-abajo"><button id="btn1" class="boton"><a href="SUB/Neuquen.html">Neuquen</a></button></div>
         </div>
     </div>
+    <script>
+        AOS.init();
+      </script>
     </main>
     <footer id="footer-id" class="item5">
         <div class="socialnetwork">
