@@ -304,10 +304,6 @@ footer iframe{
         top: 20vh;
     }
     
-    nav{
-        font-size: 3.5vh;
-    }
-    
     aside{
         display: none;
         top: 15vw;
@@ -669,8 +665,6 @@ footer iframe{
         width: 100vw;
         margin-top: -25vw;
         margin-right: 1vw;
- 
-
     }
     
     footer {

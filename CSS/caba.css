@@ -68,7 +68,6 @@ html {
         display: none;
     }
     .column {
-        border: 2px dotted blue;
         flex: 100%;
         padding: 5px;
         display: flex;
