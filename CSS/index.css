@@ -301,7 +301,7 @@ footer iframe{
         top: 12vw   
     }
     main {
-        top: 20vh;
+        top: 45vw;
     }
     
     aside{
@@ -312,7 +312,7 @@ footer iframe{
     footer {
         position: relative;
         width: 99vw;
-        top: 13vh;
+        top: 40vw;
     }
     a {
         margin: 1vw;
@@ -347,7 +347,7 @@ footer iframe{
         border-radius: 2vw;
     }
     .submenu{
-        top: 12vw;
+        top: 8vw;
         left: 1vw;
         box-shadow: 0px 1vw 2vw 0px #00000073;
     }
