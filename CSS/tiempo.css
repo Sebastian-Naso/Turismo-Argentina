@@ -28,6 +28,7 @@
 @media screen and (max-width: 580px){
   .tiempo{
     margin:-15vw auto auto;
+    margin-bottom: 3vw;
     grid-template-columns: 30vw 10vw;
     grid-template-rows: 5vw  3vw;
     width: 90vw;
@@ -69,6 +70,7 @@
     width: 80%;
     height: 15vw;
     margin: 2.6vw  auto;
+    margin-bottom: 5vw;
     border-radius: 3vw;
     border: .1vw solid #00A7E1;
     font-size: 1vw;

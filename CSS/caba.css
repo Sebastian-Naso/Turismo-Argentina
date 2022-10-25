@@ -221,6 +221,20 @@ main a{
 
 /*dispositivo grande*/
 @media screen and (min-width: 961px) {
+  #lugares a{
+    position: relative;
+    left: 1vw ;
+  }
+  #actividades a{
+    position: relative;
+    left: 1vw;
+  }
+  .subtitulo{
+    font-size: 2vw;
+  }
+  .caba{
+    text-align: center;
+  }
 
 
 }

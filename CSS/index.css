@@ -26,7 +26,7 @@ nav{
 }
 main {
     position:relative;
-    top: 25vh;
+    
 }
 aside{
     background-color: #664fd9;
@@ -663,7 +663,7 @@ footer iframe{
     main {  
         position:relative;
         width: 100vw;
-        margin-top: -25vw;
+        margin-top: -15vw;
         margin-right: 1vw;
     }
     

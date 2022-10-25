@@ -26,6 +26,16 @@ html {
     margin: 1vw;
     margin-left: 15%;
     margin-right: 15%;
-
     box-shadow: 2px 2px 4px #00000097;
+}
+p{
+    text-align: justify;
+}
+@media screen and (max-width: 580px) {
+
+.nosotros{
+    
+    font-size: 5vw;
+    margin-left: 1vw;
+}
 }

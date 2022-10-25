@@ -18,6 +18,10 @@ html {
 }
 
 @media screen and (max-width: 580px) {
+    .contacto{
+        font-size: 6vw;
+        margin-left: 1vw;
+    }
     form{
         border-radius: 2vw;
         margin-left: 10%;
