@@ -1,0 +1,41 @@
+
+html {
+    scroll-behavior: smooth;
+}
+#nosotros{
+    position: relative;
+    color: #ffffff;
+    border: 2px #00A7E1; 
+    text-shadow: 2px 2px #00000094;
+    text-align: left;
+    text-transform: uppercase;   
+    font-weight: bolder;
+    background-color: #00A7E1;
+    width: auto;
+}
+.nosotros{
+    
+    font-size: 3vw;
+    margin-left: 1vw;
+}
+.nosotrospic {
+    width: 70%;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 1vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 2px 2px 4px #00000097;
+}
+p{
+    text-align: justify;
+}
+@media screen and (max-width: 580px) {
+
+.nosotros{
+    
+    font-size: 5vw;
+    margin-left: 1vw;
+}
+}

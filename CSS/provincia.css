@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+#provincia{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000094;
+    text-align: left;
+    text-transform: uppercase;   
+    font-weight: bolder;
+    background-color: #00A7E1;
+    width: auto;
+    height: auto;
+}
+.provincia{
+    font-size: 4vw;
+    margin-left: 1vw;
+    margin-top: 2vw;  
+}
+
+.imagenes2 {
+    width: 100%;
+    left: 13%;
+    right: 13%;
+    height: 25vw;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 4px #00000097;
+    object-fit: cover;
+    
+}
+.descripcion{
+    text-align: justify;
+    margin: 1vw;
+    padding: 10px;
+    width: auto;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
+  .subtitulo{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000094;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #00A7E1;
+    width: auto;
+    height: auto;
+  }
+  .escudo{
+    position: relative;
+    width: 20%;
+    height: auto;
+    left:40%;
+    right: 40%;
+  }
+  main a{
+    color: #0037e1;
+  }
+
+/*dispositivo pequeño*/
+@media screen and (max-width: 580px) {
+  #provincia{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000094;
+    text-align: left;
+    text-transform: uppercase;   
+    font-weight: bolder;
+    background-color: #00A7E1;
+    width: auto;
+    height: auto;
+}
+.provincia{
+    font-size: 6vw;
+    text-align: center;
+    margin-left: 1vw;
+    margin-top: 2vw;  
+}
+
+.imagenes2 {
+    width: 100%;
+    left: 13%;
+    right: 13%;
+    height: 25vw;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 4px #00000097;
+    object-fit: cover;
+    
+}
+.descripcion{
+    text-align: justify;
+    margin: 1vw;
+    padding: 10px;
+    width: auto;
+}
+main a{
+    
+    z-index: 3;
+    font-size: 3vw;
+    width: 35vw;
+    text-align: center;
+    background-color: #00A7E1;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #00000094; 
+}
+#lugares a{
+  position: relative;
+  left:12vw;
+  
+}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+    padding: 5px;
+  }
+  .subtitulo{
+    position: relative;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000094;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #00A7E1;
+    width: auto;
+    height: auto;
+  }
+  .escudo{
+    position: relative;
+    width: 30%;
+    height: auto;
+    left:35%;
+    right: 35%;
+  }
+    .descripcion{
+        display: none;
+    }
+    .column {
+        flex: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .column .imagenes2{
+        float:left;
+      }
+      #lugares .imagenes2 {
+        position: relative;
+        width: 150%;
+        height: 50vw;
+        border-radius: 3vw;
+        box-shadow: 2px 2px 4px #00000097;
+        object-fit: cover;
+        margin-left: -40vw;
+        
+    }
+    #actividades .imagenes2 {
+        position: relative;
+        width: 150%;
+        height: 50vw;
+        border-radius: 3vw;
+        box-shadow: 2px 2px 4px #00000097;
+        object-fit: cover;
+        margin-left: 10vw;
+        
+    }
+}
+  /*Dispositivo mediano*/
+@media (min-width: 581px) and (max-width: 960px) {
+
+  .escudo{
+    position: relative;
+    width: 30%;
+    height: auto;
+    left:35%;
+    right: 35%;
+  }
+  #lugares a{
+    position: relative;
+    left: 2vw ;
+  }
+  #actividades a{
+    position: relative;
+    left: 2vw;
+  }
+  #lugares .imagenes2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 4px #00000097;
+    object-fit: cover;
+    margin-left: -7vw;
+    
+}
+#actividades .imagenes2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 3vw;
+    box-shadow: 2px 2px 4px #00000097;
+    object-fit: cover;
+    margin-left: -5vw;
+    
+}
+
+}
+
+
+
+
+/*dispositivo grande*/
+@media screen and (min-width: 961px) {
+  #lugares a{
+    position: relative;
+    left: 1vw ;
+  }
+  #actividades a{
+    position: relative;
+    left: 1vw;
+  }
+  .subtitulo{
+    font-size: 2vw;
+  }
+  .provincia{
+    text-align: center;
+  }
+
+
+}

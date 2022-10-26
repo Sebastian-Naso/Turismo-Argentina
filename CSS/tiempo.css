@@ -1,0 +1,138 @@
+.container{
+  text-align: right;
+
+}
+
+.tiempo{
+  position: relative;  
+  overflow: hidden;  
+  background: #e7e7e772;  
+  text-align: center;  
+}
+#icon{  
+  position: absolute;  
+}
+.name{
+  text-align: right;
+  position: absolute;  
+}
+.desc{
+  position: absolute;
+  text-align: center;
+}
+.temp{
+  text-align: right;
+  position: absolute;
+}
+/*Dispositivo Pequeño*/
+@media screen and (max-width: 580px){
+  .tiempo{
+    margin:-15vw auto auto;
+    margin-bottom: 3vw;
+    grid-template-columns: 30vw 10vw;
+    grid-template-rows: 5vw  3vw;
+    width: 90vw;
+    height: 20vw;
+    border-radius: 3vw;
+    border: .35vw solid #00A7E1;
+  }
+  #icon{
+    width: 12.9vw;
+    height: 12.9vw;
+    left: 5.2vw;
+    top: -.9vw;
+  }
+  .name{
+    font-size: 7vw;
+    right: 3vw;
+    top: .5vw
+
+  }
+  .desc{
+      left: 3vw;
+      top: 12vw;  
+      font-size: 5vw;
+  }
+  .temp{
+      right: 3vw;
+      top: 12vw;  
+      font-size: 5vw;
+  }
+}
+
+/*Dispositivo mediano*/
+@media (min-width: 581px) and (max-width: 960px) {
+  .tiempo{
+    top: 2vw;
+    right: .8vw;
+    grid-template-columns: 30vw 10vw;
+    grid-template-rows: 5vw  3vw;
+    width: 80%;
+    height: 15vw;
+    margin: 2.6vw  auto;
+    margin-bottom: 5vw;
+    border-radius: 3vw;
+    border: .1vw solid #00A7E1;
+    font-size: 1vw;
+  }
+  #icon{
+    width: 7.4vw;
+    height: 7.4vw;
+    left: 2.9vw;
+    top: 0
+  }
+  .name{
+    font-size: 4vw;
+    right: .9vw;
+    top:0
+    
+  }
+  .desc{
+      left: 2.9vw;
+      top: 7vw;  
+      font-size: 2.5vw;
+  }
+  .temp{
+      right: .9vw;
+      top: 7vw;
+      font-size: 2.5vw;  
+  }
+  
+}
+
+/*Dispositivo grande*/
+@media screen and (min-width: 961px) {
+  .tiempo{
+    top: 1vw;
+    right: .8vw;
+    grid-template-columns: 30vw 10vw;
+    grid-template-rows: 5vw  3vw;
+    width: 30%;
+    height: 10vw;
+    margin: 2.6vw  auto;
+    border-radius: 2vw;
+    border: .1vw solid #00A7E1;
+    font-size: 1vw;
+  }
+  #icon{
+    width: 6vw;
+    height: 6vw;
+    left: 2.4vw;
+    top: .15vw;
+  }
+  .name{  
+    font-size: 2.5vw;
+    right: .5vw;
+    top: .15vw
+  }
+  .desc{  
+      font-size: 1.5vw;
+      left: 2.4vw;
+      top: 7vw;  
+  }
+  .temp{  
+      font-size: 1.5vw;
+      right: .5vw;
+      top: 7vw;  
+  }
+}

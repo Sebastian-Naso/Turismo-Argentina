@@ -1,0 +1,246 @@
+*{    
+    margin-top: 0px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: #00A7E1;
+    position: fixed;
+    z-index: 12;
+    margin-top: 1vw;
+}
+
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: nav;
+}
+.item3{
+    grid-area: aside;
+}
+.item4{
+    grid-area: main;
+}
+.item5{
+    grid-area: footer;
+}
+
+.menu{
+    list-style: none;
+    display:block;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    background: linear-gradient(#00A7E1, #0037e1);
+}
+#boton{
+    display: none;
+}
+
+a {
+    margin: 5px;
+    padding: 1px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 10% 10%;
+}
+
+.boton{
+height: fit-content;
+padding: 10px;
+width: 100%;
+background-color: #00A7E1;
+color: white;
+border-radius: 10px;
+}
+.item2{
+    display: inline-block;
+}
+.items{
+    display: inline-flex;
+    position: sticky;
+}
+main {
+    position:relative;
+    top: 25vh;
+}
+
+.submenu{
+    display: none;
+    outline: none;
+    overflow: hidden;
+    background-color: #0037e1;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    box-shadow: 0px 5px 10px 0px #00000073;
+
+
+}
+
+
+.menu a:hover {
+        background-color: #00A7E1;
+        transition: .3s;
+    color: #ffffff;
+
+}
+.items2:hover .submenu{
+    transition: 1s;        
+    display: list-item;
+
+    
+}
+.btn-menu{
+    display:block;
+    color:#ffffff;
+    margin-left:5px;
+    margin-top: 3px;
+    font-size: 6vw;
+}
+
+
+/*Dispositivo Pequeño*/
+@media screen and (max-width: 580px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer';
+        grid-template-rows: auto auto auto .5vw 45vw;
+    }
+    
+    nav{       
+        width: 100vw;
+        height: 6vh;
+        font-size: 3.5vw; 
+        top: 10vw   
+    }
+   
+    
+    .menu{
+        visibility:hidden;
+        left: -1vw;
+        opacity: 0;
+        font-size: 3vh;
+    }
+    #boton:checked ~.menu{
+        visibility: visible;
+        opacity: 1;
+        /*transition: opacity 1.5s ease-in-out;*/
+        display: block;
+    }
+    .boton{
+    padding: 10px;
+    width: 100%;
+    border-radius: 2vw;
+    }
+    .submenu{
+        top: 7vw;
+        left: 1vw;
+        box-shadow: 0px 1vw 2vw 0px #00000073;
+    }
+    main{
+        position: relative;
+        top: 50vw;
+    }
+}
+    
+/*Dispositivo mediano*/
+@media (min-width: 581px) and (max-width: 960px) {
+    
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header header  header'
+        'nav    nav     nav   '
+        'main   main    aside '        
+        'footer footer  footer';
+        grid-template-rows: auto auto auto auto ;
+        grid-template-columns: 40vw 40vw 20vw;
+    }
+    
+    nav{       
+        width: 100vw;
+        height: 6vh;
+        font-size: 3.5vw; 
+        top: 10vw;
+    }
+    main {  
+        position:relative;
+        width: 100vw;
+        top: 20vw;
+        margin-right: 1vw;
+    }
+    .menu{
+        visibility:hidden;
+        left: -1vw;
+        opacity: 0;
+        font-size: 3vh;
+    }
+    #boton:checked ~.menu{
+        visibility: visible;
+        opacity: 1;
+        /*transition: opacity 1.5s ease-in-out;*/
+        display: block;
+    }
+    .submenu{
+        top: 3.5vw;
+        left: 1vw;
+        box-shadow: 0px 1vw 2vw 0px #00000073;
+    
+    
+    }
+    .btn-menu{
+
+        font-size: 3vw;
+    }
+    
+}
+/*Dispositivo grande*/
+@media screen and (min-width: 961px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header header  header   header'
+        'nav    nav     nav      nav    '
+        'main   main    main      main '
+        'footer footer  footer    footer'        
+        ;
+        grid-template-rows: .75fr .25fr auto .75fr;
+        grid-template-columns: 2fr 5fr 5fr 10fr;
+    }
+    main{
+        position: relative;
+        top: 5vw;
+    }
+    nav{       
+        width: 100vw;
+        font-size: 2vw; 
+        top: 5vw;
+    }
+    .submenu{
+        top: 2.5vw;
+        left: 1vw;
+        box-shadow: 0px 1vw 2vw 0px #00000073;
+  
+    }
+    .submenu a{
+        top: 2vw;
+        display: block;
+    }
+    
+    .btn-menu{
+        display: none;
+    }
+    
+    
+   
+}
