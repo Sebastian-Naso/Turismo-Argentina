@@ -101,8 +101,8 @@ footer iframe{
         width: 30%;
     }
     footer iframe{
-        height: 35vw;
-        width: 50vw;
+        height: 30vw;
+        width: 45vw;
         border-radius: 3vw;
         border: 2px solid #000000
         /*box-shadow: 2px 2px 4px #00000097;*/
@@ -112,17 +112,18 @@ footer iframe{
         max-width: 30vw;
         z-index: 15;
         padding: 1vw;
+        font-size: 3vw;
     }
     #footer-destino{
         position: absolute;
         top: -2vw;
-        left: 15vw;
+        left: 20vw;
         margin-top: 2vw;
         padding: 1vw;
-        font-size: 1.5vw;
+        font-size: 3vw;
         text-align: left;
         max-width: 20vw;
-        visibility: hidden;
+        /*visibility: hidden;*/
     }
     
 }
@@ -174,13 +175,13 @@ footer iframe{
     #footer-destino{
         position: absolute;
         top: -2vw;
-        left: 15vw;
+        left: 20vw;
         margin-top: 2vw;
         padding: 1vw;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         text-align: left;
         max-width: 20vw;
-        visibility: hidden;
+        /*visibility: hidden;*/
     }
     
 }

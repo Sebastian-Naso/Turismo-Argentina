@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
-#caba{
+#provincia{
     position: relative;
     color: #ffffff;
     text-shadow: 2px 2px #00000094;
@@ -12,7 +12,7 @@ html {
     width: auto;
     height: auto;
 }
-.caba{
+.provincia{
     font-size: 4vw;
     margin-left: 1vw;
     margin-top: 2vw;  
@@ -61,12 +61,12 @@ html {
     right: 40%;
   }
   main a{
-    color: red;
+    color: #0037e1;
   }
 
 /*dispositivo pequeño*/
 @media screen and (max-width: 580px) {
-  #caba{
+  #provincia{
     position: relative;
     color: #ffffff;
     text-shadow: 2px 2px #00000094;
@@ -77,7 +77,7 @@ html {
     width: auto;
     height: auto;
 }
-.caba{
+.provincia{
     font-size: 6vw;
     text-align: center;
     margin-left: 1vw;
@@ -232,7 +232,7 @@ main a{
   .subtitulo{
     font-size: 2vw;
   }
-  .caba{
+  .provincia{
     text-align: center;
   }
 

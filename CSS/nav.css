@@ -9,6 +9,7 @@ nav{
     background-color: #00A7E1;
     position: fixed;
     z-index: 12;
+    margin-top: 1vw;
 }
 
 .item1{

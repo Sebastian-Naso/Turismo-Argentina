@@ -15,7 +15,7 @@ header{
 header h1{
     text-align: left;
     margin-left: 5px;
-    z-index: 11;
+    z-index: 15;
 }
 
 
@@ -113,7 +113,7 @@ header h1{
     header{
         width: 100vw;
         font-size: 2vw;
-        height: 5vw;
+        height: 8vw;
         top: 0;
     }
     header h1{
