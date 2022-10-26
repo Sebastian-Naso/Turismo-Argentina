@@ -423,7 +423,8 @@ footer iframe{
         width: 30%;
     }
     footer iframe{
-        height: 35vw;
+        margin-top: 2vw;
+        height: 30vw;
         width: 50vw;
         border-radius: 3vw;
         border: 2px solid #000000
@@ -434,7 +435,7 @@ footer iframe{
         max-width: 30vw;
         z-index: 15;
         padding: 1vw;
-        font-size: 4vw;
+        font-size: 3vw;
     }
     img:hover{
         opacity: 1;
@@ -442,14 +443,14 @@ footer iframe{
     }
     #footer-destino{
         position: absolute;
-        top: -2vw;
-        left: 15vw;
+        top: 0vw;
+        left: 20vw;
         margin-top: 2vw;
         padding: 1vw;
-        font-size: 1.5vw;
+        font-size: 3vw;
         text-align: left;
         max-width: 20vw;
-        visibility: hidden;
+        /*visibility: hidden;*/
     }
 
 }
@@ -611,14 +612,14 @@ footer iframe{
     }
     #footer-destino{
         position: absolute;
-        top: -2vw;
-        left: 15vw;
+        top: 0vw;
+        left: 20vw;
         margin-top: 2vw;
         padding: 1vw;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         text-align: left;
         max-width: 20vw;
-        visibility: hidden;
+        /*visibility: hidden;*/
     }
 
 
